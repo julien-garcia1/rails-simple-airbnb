@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<h1>All flats</h1>
+  <div class="cards">
+    <% @flats.each do |flat| %>
+      <div class="card">
+        <li><%= flat.name %></li>
+        <li><%= flat.address %></li>
+        <li><%= flat.number_of_guests %></li>
+        <li><%= flat.price_per_night %></li>
+      </div>
+  </div>
+    <% end %>
